@@ -1,7 +1,7 @@
 <div align="center">
 
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs-6qziLk5rwaX6pFpElxk4N89awppGDlGmg&s" alt="Logo" height="200">
+  <h1 align="center"><strong>MINIMAL API - FORMULA 1</strong></h1>
   <p align="center">
 	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
   </p>
@@ -15,6 +15,12 @@
   
   [![TypeScript version][ts-badge]][typescript-5-4]
   [![Node.js version][nodejs-badge]][nodejs]
+  [![Fastify version][fastify-badge]][fastify]
+
+
+
+ 
+
 
 </div>
 
@@ -28,6 +34,7 @@ This code source was developed with the following items:
 - [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
 - [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
 - [@types/node][@types/node-npm] - type definitions for node
+- [fastify][fastify-npm] - Minimal fast api
 
 ### 📄 Files
 
@@ -61,21 +68,31 @@ $ npm install
 
 ## Author
 
+
 | [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
 | :---------------------------------------------------------------------------------------------------------------------------------------: |
 |                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
 
-# Credits
 
-icons by [Pino Lamanna][dribble-icon]
+### Credits
+
+| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
+| :---------------------------------------------------------------------------------------------------------------------------------------: |
+|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
+
 
 [typescript]: https://www.typescriptlang.org/
 [typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
+[ts-badge]: https://img.shields.io/badge/TypeScript-v5.4-blue.svg
 [nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
+[fastify-badge]: https://img.shields.io/badge/Fastify-v5.2.2-blue.svg
+
 [nodejs]: https://nodejs.org/
-[dribble-icon]: https://dribbble.com/Schakalwal
 [typescript-npm]: https://www.npmjs.com/package/typescript
 [tsx-npm]: https://www.npmjs.com/package/tsx
 [tsup-npm]: https://www.npmjs.com/package/tsup
 [@types/node-npm]: https://www.npmjs.com/package/@types/node
+
+
+[fastify-npm]: https://www.npmjs.com/package/fastify
+[fastify]: https://fastify.dev/
