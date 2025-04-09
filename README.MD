@@ -52,13 +52,16 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/felipeAguiarCode/node-blue-boilerplate
+$ git clone https://github.com/alexsrs/minimal-api-formula-1.git
 
 # Go into the repository
-$ cd node-blue-boilerplate
+$ cd .\minimal-api-formula-1\
 
 # Install dependencies
 $ npm install
+
+# run dev mode
+$ npm run start:dev
 ```
 
 ## Author

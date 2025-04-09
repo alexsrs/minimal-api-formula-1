@@ -42,6 +42,8 @@ const drivers = [
             { id: 19, name: "Yuki Tsunoda", team: "Scuderia AlphaTauri" },
             { id: 20, name: "Daniel Ricciardo", team: "Scuderia AlphaTauri" },
 ];
+
+
 server.get("/teams", async (request, response) => {
     response.type("application/json").code(200);
     return { teams };
@@ -51,6 +53,35 @@ server.get("/drivers", async (request, response) => {
     response.type("application/json").code(200);
     return { drivers };
 });
+
+interface Params {
+    id: number;
+}
+
+server.get<{ Params: Params }>("/drivers/:id", async (request, response) => {
+    const id = parseInt(request.params.id as unknown as string);
+    const driver = drivers.find(driver => driver.id === id);
+    if (!driver) {
+        response.type("application/json").code(404);
+        return { error: "Driver not found" };
+    } else {
+    response.type("application/json").code(200);
+    return { driver };
+    }
+});
+
+server.get<{ Params: Params }>("/teams/:id", async (request, response) => {
+    const id = parseInt(request.params.id as unknown as string);
+    const team = teams.find(team => team.id === id);
+    if (!team) {
+        response.type("application/json").code(404);
+        return { error: "Team not found" };
+    } else {
+    response.type("application/json").code(200);
+    return { team };
+    }
+});
+    
 
 server.listen({ port: 3333 }, () => {
     console.log("Server is running on http://localhost:3333");
