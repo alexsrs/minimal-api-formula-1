@@ -30,6 +30,7 @@ This code source was developed with the following items:
 - [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
 - [@types/node][@types/node-npm] - type definitions for node
 - [fastify][fastify-npm] - Minimal API using Fastify
+- [@fastify/cors] - enables the use of CORS in a Fastify application.
 
 ### 📄 Files
 
@@ -91,6 +92,6 @@ $ npm run start:dev
 [tsup-npm]: https://www.npmjs.com/package/tsup
 [@types/node-npm]: https://www.npmjs.com/package/@types/node
 
-
 [fastify-npm]: https://www.npmjs.com/package/fastify
 [fastify]: https://fastify.dev/
+[@fastify/cors]: https://www.npmjs.com/package/@fastify/cors

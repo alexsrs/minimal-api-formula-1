@@ -1,6 +1,12 @@
 import fastify from "fastify";
+import cors from "@fastify/cors";
 
 const server = fastify({ logger: true });
+
+server.register(cors, {
+    origin: "*", // Allow all origins for CORS
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
+});
 
 server.get("/", async (request, response) => {
     response.type("application/json").code(200);
@@ -22,25 +28,25 @@ const teams = [
 
 const drivers = [
     { id: 1, name: "Charles Leclerc", team: "Scuderia Ferrari" },
-            { id: 2, name: "Carlos Sainz", team: "Scuderia Ferrari" },
-            { id: 3, name: "Lando Norris", team: "McLaren F1 Team" },
-            { id: 4, name: "Oscar Piastri", team: "McLaren F1 Team" },
-            { id: 5, name: "Lance Stroll", team: "Aston Martin Aramco Cognizant F1 Team" },
-            { id: 6, name: "Fernando Alonso", team: "Aston Martin Aramco Cognizant F1 Team" },
-            { id: 7, name: "Lewis Hamilton", team: "Mercedes-AMG Petronas F1 Team" },
-            { id: 8, name: "George Russell", team: "Mercedes-AMG Petronas F1 Team" },
-            { id: 9, name: "Sergio Pérez", team: "Oracle Red Bull Racing" },
-            { id: 10, name: "Max Verstappen", team: "Oracle Red Bull Racing" },
-            { id: 11, name: "Valtteri Bottas", team: "Alfa Romeo F1 Team Stake" },
-            { id: 12, name: "Zhou Guanyu", team: "Alfa Romeo F1 Team Stake" },
-            { id: 13, name: "Kevin Magnussen", team: "Haas F1 Team" },
-            { id: 14, name: "Nico Hülkenberg", team: "Haas F1 Team" },
-            { id: 15, name: "Pierre Gasly", team: "BWT Alpine F1 Team" },
-            { id: 16, name: "Esteban Ocon", team: "BWT Alpine F1 Team" },
-            { id: 17, name: "Alexander Albon", team: "Williams Racing" },
-            { id: 18, name: "Logan Sargeant", team: "Williams Racing" },
-            { id: 19, name: "Yuki Tsunoda", team: "Scuderia AlphaTauri" },
-            { id: 20, name: "Daniel Ricciardo", team: "Scuderia AlphaTauri" },
+    { id: 2, name: "Carlos Sainz", team: "Scuderia Ferrari" },
+    { id: 3, name: "Lando Norris", team: "McLaren F1 Team" },
+    { id: 4, name: "Oscar Piastri", team: "McLaren F1 Team" },
+    { id: 5, name: "Lance Stroll", team: "Aston Martin Aramco Cognizant F1 Team" },
+    { id: 6, name: "Fernando Alonso", team: "Aston Martin Aramco Cognizant F1 Team" },
+    { id: 7, name: "Lewis Hamilton", team: "Mercedes-AMG Petronas F1 Team" },
+    { id: 8, name: "George Russell", team: "Mercedes-AMG Petronas F1 Team" },
+    { id: 9, name: "Sergio Pérez", team: "Oracle Red Bull Racing" },
+    { id: 10, name: "Max Verstappen", team: "Oracle Red Bull Racing" },
+    { id: 11, name: "Valtteri Bottas", team: "Alfa Romeo F1 Team Stake" },
+    { id: 12, name: "Zhou Guanyu", team: "Alfa Romeo F1 Team Stake" },
+    { id: 13, name: "Kevin Magnussen", team: "Haas F1 Team" },
+    { id: 14, name: "Nico Hülkenberg", team: "Haas F1 Team" },
+    { id: 15, name: "Pierre Gasly", team: "BWT Alpine F1 Team" },
+    { id: 16, name: "Esteban Ocon", team: "BWT Alpine F1 Team" },
+    { id: 17, name: "Alexander Albon", team: "Williams Racing" },
+    { id: 18, name: "Logan Sargeant", team: "Williams Racing" },
+    { id: 19, name: "Yuki Tsunoda", team: "Scuderia AlphaTauri" },
+    { id: 20, name: "Daniel Ricciardo", team: "Scuderia AlphaTauri" },
 ];
 
 
@@ -86,5 +92,3 @@ server.get<{ Params: Params }>("/teams/:id", async (request, response) => {
 server.listen({ port: 3333 }, () => {
     console.log("Server is running on http://localhost:3333");
     });
-
-
