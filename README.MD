@@ -17,11 +17,6 @@
   [![Node.js version][nodejs-badge]][nodejs]
   [![Fastify version][fastify-badge]][fastify]
 
-
-
- 
-
-
 </div>
 
 # 🚀 Technologies
@@ -34,7 +29,7 @@ This code source was developed with the following items:
 - [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
 - [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
 - [@types/node][@types/node-npm] - type definitions for node
-- [fastify][fastify-npm] - Minimal fast api
+- [fastify][fastify-npm] - Minimal API using Fastify
 
 ### 📄 Files
 
@@ -69,9 +64,9 @@ $ npm install
 ## Author
 
 
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
+| [<img src="https://avatars.githubusercontent.com/u/9590903?s=96&v=4"><br><sub>Alex Sandro R. de Souza</sub>](https://github.com/alexsrs) |
 | :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
+|                                            [Linkedin](https://www.linkedin.com/in/alex4/)                                             |
 
 
 ### Credits
