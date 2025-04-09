@@ -47,8 +47,6 @@ This code source was developed with the following items:
 
 # 👨‍💻 How To Use
 
-click in **[Use this template]** OR
-
 To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) + [NPM v10+](https://nodejs.org/en/) installed on your computer. From your command line:
 
 ```bash
@@ -71,14 +69,6 @@ $ npm run start:dev
 | [<img src="https://avatars.githubusercontent.com/u/9590903?s=96&v=4"><br><sub>Alex Sandro R. de Souza</sub>](https://github.com/alexsrs) |
 | :---------------------------------------------------------------------------------------------------------------------------------------: |
 |                                            [Linkedin](https://www.linkedin.com/in/alex4/)                                             |
-
-
-### Credits
-
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
-| :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
-
 
 [typescript]: https://www.typescriptlang.org/
 [typescript-5-4]: https://www.typescriptlang.org/
