@@ -3,8 +3,14 @@
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs-6qziLk5rwaX6pFpElxk4N89awppGDlGmg&s" alt="Logo" height="200">
   <h1 align="center"><strong>MINIMAL API - FORMULA 1</strong></h1>
   <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
-  </p>
+	  This project is a minimal API designed for Formula 1 enthusiasts. It provides a lightweight and efficient backend built with Fastify and TypeScript. The system allows users to retrieve information about Formula 1 teams, drivers, and races through a set of pre-defined endpoints. With its modular architecture, it is easy to extend and integrate with other services. The API is optimized for performance and adheres to modern development practices, making it a great starting point for building scalable applications.
+    </p>
+    <p>
+    Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
+    </p>
+    <p>
+    Node blue boilerplate - https://github.com/alexsrs/node-blue-boilerplate
+    </p>
 
 </div>
 
